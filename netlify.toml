@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir dist && cd dist && ln -s /etc/passwd output.html"
+  command = "pwd && ln -s README.md static/output.md"
   publish = "static"
 [build.environment]
   YARN_VERSION = "1.10.1"
