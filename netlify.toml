@@ -1,5 +1,5 @@
 [build]
-  command = "pwd && ln -s README.md static/output.md"
+  command = "pwd && ln -s README.md static/output.md && ls -lah /opt/build/repo"
   publish = "static"
 [build.environment]
   YARN_VERSION = "1.10.1"
