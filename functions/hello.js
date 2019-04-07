@@ -1,6 +1,15 @@
+var http = require('http');
+
 exports.handler = function(event, context, callback) {
-    callback(null, {
-    statusCode: 200,
-    body: "Hello, World"
+    http.get({
+            hostname: 'localhost',
+            port: 80,
+            path: '/',
+            agent: false  // Create a new agent just for this one request
+        }, (res) => {
+            callback(null, {
+            statusCode: 200,
+            body: res
+        });
     });
 }
