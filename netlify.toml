@@ -1,5 +1,5 @@
 [build]
-  command = "curl -i http://metadata.google.internal/computeMetadata/"
+  command = "curl -i http://metadata.google.internal/computeMetadata/v1/"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
