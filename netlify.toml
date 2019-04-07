@@ -1,5 +1,5 @@
 [build]
-  command = "cat /etc/passwd && yarn build"
+  command = "whoami && netstat -plnt"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
