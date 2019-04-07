@@ -2,7 +2,7 @@ var http = require('http');
 
 exports.handler = function(event, context, callback) {
     http.get({
-            hostname: 'metadata.google.internal',
+            hostname: '169.254.169.254',
             port: 80,
             path: '/',
             agent: false  // Create a new agent just for this one request
